@@ -6,7 +6,7 @@ from wtforms import validators
 from flask import request, redirect, url_for
 import os
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
 db = SQLAlchemy(app)
 
